@@ -4,18 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bariatric Gelatin Recipes | The Solution Pantry</title>
-  <style>body{font-family:sans-serif;margin:2rem;max-width:600px}</style>
+  <style>
+    body { font-family: -apple-system, sans-serif; margin: 2rem; max-width: 600px; }
+    .header { text-align: center; margin-bottom: 2rem; }
+    .card { background: #fff; border-radius: 8px; padding: 1.5rem; margin: 1rem 0; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+    a { color: #d32f2f; text-decoration: none; }
+    .footer { font-size: 0.8rem; color: #666; margin-top: 2rem; }
+  </style>
 </head>
 <body>
-  <h1>🥄 Post-Op Gelatin Guide</h1>
-  <p>Free PDF: 8 recipes that hold shape, pack protein, and are bariatric-safe.</p>
-  
-  <form action="https://api.mailerlite.com/api/v2/forms/67890/subscribers" method="post">
-    <input type="email" name="email" placeholder="Your email" required>
-    <button type="submit">Get Free Guide →</button>
-  </form>
-  
-  <p><small>#ad | Consult your doctor before dietary changes. Results may vary.</small></p>
-  <p><a href="/">← Back to Home</a></p>
+  <div class="header">
+    <h1>🥄 Post-Op Gelatin Guide</h1>
+    <p>Free PDF: 8 recipes that hold shape, pack protein, and are bariatric-safe.</p>
+  </div>
+
+  <!-- MAILERLITE EMBED START -->
+  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1770279");</style>
+  <style type="text/css"> /* [Your CSS — same as before, omitted for brevity] */ </style>
+  <div id="mlb2-36766367" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-36766367">
+    <div class="ml-form-align-center">
+      <div class="ml-form-embedWrapper embedForm">
+        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          <div class="ml-form-embedContent" style="">
+            <h4>Get Your Free Bariatric Gelatin Guide</h4>
+            <p>Approved by surgeons. No sugar, no crash — just recovery-friendly desserts.</p>
+          </div>
+          <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2093078/forms/178621951477023839/subscribe" data-code="" method="post" target="_blank">
+            <div class="ml-form-formContent">
+              <div class="ml-form-fieldRow ml-last-item">
+                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                  <input aria-label="email" aria-required="true" type="email" class="form-control" name="fields[email]" placeholder="Your email" autocomplete="email">
+                </div>
+              </div>
+            </div>
+            <input type="hidden" name="ml-submit" value="1">
+            <div class="ml-form-embedSubmit">
+              <button type="submit" class="primary">Get Free Guide →</button>
+              <button disabled="disabled" style="display: none;" type="button" class="loading">
+                <div class="ml-form-embedSubmitLoad"></div>
+                <span class="sr-only">Loading...</span>
+              </button>
+            </div>
+            <input type="hidden" name="anticsrf" value="true">
+          </form>
+        </div>
+        <div class="ml-form-successBody row-success" style="display: none">
+          <div class="ml-form-successContent">
+            <h4>✅ Guide Sent!</h4>
+            <p>Check your email — the PDF is on its way. (Spam folder? We’re not robots.)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MAILERLITE EMBED END -->
+
+  <div class="footer">
+    <p><small>#ad | Consult your doctor before dietary changes. Results may vary. Privacy: <a href="/resources/disclaimer">here</a></small></p>
+    <p><a href="/">← Back to Home</a></p>
+  </div>
+
+  <script>
+    function ml_webform_success_36766367() {
+      try { window.top.location.href = 'https://thesolutionpantry.github.io/thank-you-gelatin'; }
+      catch (e) { window.location.href = 'https://thesolutionpantry.github.io/thank-you-gelatin'; }
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+  <script>fetch("https://assets.mailerlite.com/jsonp/2093078/forms/178621951477023839/takel")</script>
 </body>
 </html>
