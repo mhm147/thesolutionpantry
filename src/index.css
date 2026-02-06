@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm, creamy, appetizing palette */
+    --background: 30 30% 98%;
+    --foreground: 20 20% 15%;
+    
+    --card: 30 40% 99%;
+    --card-foreground: 20 20% 15%;
+    
+    --popover: 30 40% 99%;
+    --popover-foreground: 20 20% 15%;
+    
+    /* Warm coral/rose primary */
+    --primary: 12 80% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Creamy secondary */
+    --secondary: 30 50% 95%;
+    --secondary-foreground: 20 30% 25%;
+    
+    --muted: 30 20% 92%;
+    --muted-foreground: 20 10% 45%;
+    
+    /* Soft accent */
+    --accent: 20 60% 94%;
+    --accent-foreground: 12 60% 40%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 12 80% 58%;
+    
+    --radius: 1rem;
+    
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(30 50% 97%) 0%, hsl(20 60% 96%) 50%, hsl(12 40% 95%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(12 80% 58%) 0%, hsl(20 75% 52%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(30 40% 99%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(20 30% 20% / 0.08);
+    --shadow-card: 0 10px 40px -10px hsl(20 30% 20% / 0.1);
+    --shadow-card-hover: 0 20px 50px -15px hsl(20 30% 20% / 0.15);
+    --shadow-glow: 0 10px 30px -5px hsl(12 80% 58% / 0.25);
+  }
+
+  .dark {
+    --background: 20 15% 8%;
+    --foreground: 30 20% 95%;
+    
+    --card: 20 15% 12%;
+    --card-foreground: 30 20% 95%;
+    
+    --popover: 20 15% 12%;
+    --popover-foreground: 30 20% 95%;
+    
+    --primary: 12 75% 55%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 30 20% 90%;
+    
+    --muted: 20 15% 20%;
+    --muted-foreground: 30 15% 60%;
+    
+    --accent: 20 25% 20%;
+    --accent-foreground: 12 60% 70%;
+    
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 12 75% 55%;
+    
+    --gradient-hero: linear-gradient(135deg, hsl(20 15% 10%) 0%, hsl(20 20% 12%) 50%, hsl(15 15% 10%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(12 75% 55%) 0%, hsl(20 70% 48%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(20 15% 14%) 0%, hsl(20 15% 12%) 100%);
+    --shadow-soft: 0 4px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.4);
+    --shadow-card-hover: 0 20px 50px -15px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 10px 30px -5px hsl(12 75% 55% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
